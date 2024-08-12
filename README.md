@@ -12,7 +12,7 @@ Authenticated and authorized users (i.e doctors) can access and update patient m
         "paassword" : "password"
     }
 ```
--response
+- response
 ```json
     {
     "success": "true",
@@ -20,7 +20,7 @@ Authenticated and authorized users (i.e doctors) can access and update patient m
     "user": {
         "name": "abdulsalam abdulrahman",
         "email": "abdulsalamamtech@gmail.com",
-        "username": "abdulsalam abdulrahman92",
+        "username": "abdulsalam-abdulrahman92",
         "role": "doctors",
         "updated_at": "2024-08-11T21:27:26.000000Z",
         "created_at": "2024-08-11T21:27:26.000000Z",
@@ -32,10 +32,29 @@ Authenticated and authorized users (i.e doctors) can access and update patient m
 ```
 
 ## Login
+- data
 ```json
     {
         "email" : "abdulsalamamtech@gmail.com",
         "paassword" : "password"
+    }
+```
+- response
+```json
+    {
+    "success": "true",
+    "message": "login successful",
+    "user": {
+        "id": 11,
+        "name": "abdulsalam abdulrahman",
+        "email": "abdulsalamamtech@gmail.com",
+        "username": "abdulsalam-abdulrahman92",
+        "role": "doctors",
+        "updated_at": "2024-08-11T21:27:26.000000Z",
+        "created_at": "2024-08-11T21:27:26.000000Z"
+    },
+    "access_token": "1|tBzu6NZekPXGimQwJHyKx9nICBFIUAsbB2s3jmUq14640d84",
+    "token_type": "Bearer"
     }
 ```
 
