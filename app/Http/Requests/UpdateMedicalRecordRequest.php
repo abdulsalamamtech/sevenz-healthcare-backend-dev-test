@@ -12,7 +12,7 @@ class UpdateMedicalRecordRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return (Auth::user()->role !== 'patients');
+        return true;
     }
 
     /**
