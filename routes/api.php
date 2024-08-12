@@ -20,8 +20,8 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 // Sevenz healthcare backend developer test
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/medical-records', [MedicalRecordController::class, 'get']);
-    Route::post('/medical-records', [MedicalRecordController::class, 'store']);
+    Route::apiResource('/medical-records', MedicalRecordController::class);
+    Route::get('/medical-records/one', [MedicalRecordController::class, 'get']);
 });
 
 

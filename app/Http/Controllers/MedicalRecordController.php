@@ -53,7 +53,7 @@ class MedicalRecordController extends Controller
      */
     public function show(MedicalRecord $medicalRecord)
     {
-        $data = $medicalRecord::with('user') ?? [];
+        $data = $medicalRecord ?? [];
 
         // Return response
         return response()->json([
